@@ -1,0 +1,130 @@
+/*Configurações gerais*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	font-family: 'Roboto', sans-serif;
+}
+/*Cabeçalho*/
+
+header{
+	color: #eee;
+	background:#444;
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+	height: 100px;
+	font-size: 1.3rem;
+}
+
+/*Configuração do parallax*/
+
+#principal{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background:url("img/img4.jpg");
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	height:110vh;
+}
+#principal h2{
+	font-size: 4rem;
+	color: #eee;
+	line-height: 100px;
+	letter-spacing: 5px;
+}
+#foto2{
+	background:url("img/img9.jpg");
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	height: 100vh;
+}
+#foto3{
+	background:url("img/img8.jpg");
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	height: 90vh;	
+}
+#foto4{
+	background:url("img/img1.jpg");
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	height: 80vh;
+}
+#foto5{
+	background:url("img/img5.jpg");
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	height: 80vh;
+}
+
+
+
+.letreiro-branco{
+	color: #333;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	
+}
+.letreiro-branco h3 , .letreiro-preto h3{
+	padding-bottom:30px;
+	display: inline-block;
+	font-size:2.5rem;
+}
+.letreiro-branco p , .letreiro-preto p{
+	font-size: 1.3rem;
+	width:90%;
+	text-align: justify;
+
+}
+.letreiro-preto{
+	text-align: justify;
+	color: #eee;
+	background: #444;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+
+/*rodapé*/
+footer{
+	background: black;
+	height: 15vh;
+	color: #eee;
+	font-size: 1.2rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+
+}
+
+
+@media(max-width:768px){
+
+	#principal h2{
+		text-align: center;
+	}
+
+	.letreiro-branco h3, .letreiro-preto h3{
+		text-align: center;
+	}
+	footer{
+		text-align: center;
+	}
+}
